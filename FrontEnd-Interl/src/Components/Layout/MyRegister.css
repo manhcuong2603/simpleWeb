@@ -1,0 +1,286 @@
+@import '@radix-ui/colors/blackA.css';
+@import '@radix-ui/colors/green.css';
+@import '@radix-ui/colors/mauve.css';
+@import '@radix-ui/colors/violet.css';
+
+.container-register {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../access/bg.jpg.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.tab-register {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: #0e0e0e45;
+    transform: translate(-50%, -50%);
+}
+
+.rg {
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 800;
+    font-size: 33px;
+}
+
+.form-tab-register {
+    position: absolute;
+    top: 31%;
+    width: 49%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50%;
+    padding: 32px;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.form-group {
+    border-radius: 10px;
+    font-size: 17px;
+    width: 93%;
+    margin-bottom: 33px;
+    padding: 5px 0;
+}
+
+.form-input-rg {
+    margin-top: -80px;
+}
+
+.err {
+    position: absolute;
+    color: red;
+    font-size: 15px;
+}
+
+.err-register {
+    position: absolute;
+    top: 5px;
+    color: red;
+}
+
+.errPs-login {
+    position: absolute;
+    top: 19%;
+    color: red;
+}
+
+.className {
+    display: flex;
+}
+
+.form-group .Input {
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 1;
+    color: #fff;
+    box-shadow: 0 0 0 1px #fff;
+    height: 35px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.Input:focus {
+    box-shadow: 0 0 0 1px black;
+}
+
+.lable-register {
+    color: #fff;
+    font-size: 15px;
+}
+
+.text-error {
+    position: absolute;
+    font-size: 17px;
+    margin-top: -3.8%;
+    cursor: none;
+    color: red;
+    right: 73px;
+}
+
+
+.tab-image-register {
+    position: absolute;
+    right: 5%;
+    top: 54%;
+    transform: translateY(-50%);
+    width: 43%;
+    height: 71%;
+    background-image: url(../access/register.png);
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+
+.btn-myregister {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 30px;
+    padding: 7px 20px;
+    display: flex;
+    font-size: 17px;
+    font-weight: 500;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--green4);
+    color: var(--green11);
+    border: none;
+
+}
+
+.btn-myregister:hover {
+    background-color: var(--green5);
+}
+
+.forgot-psw {
+    text-decoration: none;
+    position: absolute;
+    right: 8%;
+    color: white;
+}
+
+.forgot-psw:hover {
+    color: black;
+}
+
+.or-singin {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.face {
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 50%;
+    height: 8%;
+    justify-content: center;
+}
+
+.sing-or {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin: 0 10px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+
+}
+
+.sing-or:nth-child(1):hover {
+    color: #205295;
+    background-color: #205295;
+    border: 1px solid #205295;
+}
+
+.sing-or:nth-child(2):hover {
+    color: #82C3EC;
+    background-color: #82C3EC;
+    border: 1px solid #82C3EC;
+}
+
+.sing-or:hover i {
+    color: #fff;
+    display: block;
+    margin-left: 35px;
+}
+
+.sing-or i {
+    display: none;
+    position: absolute;
+    font-size: 30px;
+}
+
+@media(min-width: 950px) and (max-width: 1280px) {
+    .tab-register {
+        width: 100%;
+    }
+}
+
+@media(min-width: 834px) and (max-width: 1112px) {
+    .content-login .wlc {
+        top: 22%;
+    }
+
+    .container-login .wlc-b {
+        top: 28%;
+    }
+
+    .rg {
+        top: 17%;
+    }
+
+    .tab-register {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title-h5 {
+        margin-left: 27%;
+        font-size: 31px;
+    }
+
+    .tab-image-register {
+        display: none;
+    }
+
+    .form-tab-register {
+        width: 77%;
+        top: 58%;
+        transform: translateY(-44%);
+        left: 8%;
+        height: 58%;
+        padding: 28px;
+    }
+
+    .content-login .rg-fg {
+        top: 47%;
+    }
+
+    .or-singin {
+        bottom: 33%;
+    }
+
+    .face {
+        bottom: 19%;
+    }
+
+    .sing-or {
+        height: 27px;
+    }
+}
+
+@media(min-width: 400px) and (max-width: 750px) {
+    .rg {
+        font-size: 25px;
+        width: 254px;
+    }
+
+    .forgot-psw {
+        position: absolute;
+        font-size: 15px;
+        bottom: 25%;
+        right: 33%;
+    }
+}

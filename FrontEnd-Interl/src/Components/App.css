@@ -1,0 +1,123 @@
+/* .container-app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    height: 250px;
+    grid-template-areas: "head head"
+        "nav  main";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+    position: relative;
+}
+
+.container-app>.header {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    grid-area: head;
+    background-color: #07a787;
+}
+
+.container-app>nav {
+    width: 7rem;
+    height: 94.8vh;
+    grid-area: nav;
+    background-color: #ffa400;
+    position: absolute;
+}
+
+.container-app>.content-app {
+    position: absolute;
+    left: -38px;
+    width: 103.5%;
+    height: 94.8vh;
+    grid-area: main;
+    overflow-x: hidden;
+}
+
+
+.header-app {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    background: hsl(270, 50%, 10%);
+}
+
+.header_heading {
+    position: absolute;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_heading>a {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: hsl(270, 50%, 10%);
+    background: hsl(220, 60%, 60%);
+    padding: .2rem .7rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+}
+
+.header_heading>a:hover {
+    background: hsl(220, 80%, 64%);
+}
+
+.header_options {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    padding-right: 2.8rem;
+}
+
+.header_pro {
+    color: #eef0ff;
+    background: linear-gradient(to top right, #546FFF, #8A9CFF);
+    border: 0;
+    margin-right: 2rem;
+    font-size: 15px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sidebar {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: hsl(270, 50%, 10%);
+    height: 100%;
+    width: 7rem !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    height: 50%;
+}
+
+.sidebar .sidebar_icon {
+    margin: 30px 0;
+}
+
+.sidebar i {
+    font-size: 40px;
+    color: white;
+}
+
+.app-content {
+    background: #546FFF;
+
+} */

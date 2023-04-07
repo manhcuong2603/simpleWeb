@@ -1,0 +1,45 @@
+POST http://localhost:3030/users/register
+Content-Type: application/json
+
+{
+    "email": "usert@gmail.com",
+    "name": "Nam",
+    "username": "Le",
+    "password": "123123abc",
+    "roles": "user"
+}
+
+###
+POST http://localhost:3030/users/login
+Content-Type: application/json
+
+{
+   "email": "user0@gmail.com",
+    "password": "123123abc"
+}
+
+### Find user with id
+GET http://localhost:3030/users/1
+
+### Who Am I
+GET http://localhost:3030/users/whoami
+### logOut user
+POST http://localhost:3030/users/signout
+
+### Find all user with email
+GET http://localhost:3030/users?email=anhtu@gmail.com
+### Get all user
+GET http://localhost:3030/users
+
+### Delete user with ID
+DELETE http://localhost:3030/users/6
+
+### Update user with ID
+PATCH http://localhost:3030/users/10
+
+Content-Type: application/json
+{
+    "name": "Hai",
+    "email": "update@gmail.com",
+    "username": "Nguyen"
+}

@@ -1,0 +1,293 @@
+.user-table {
+    position: relative;
+    width: 97%;
+    height: 80%;
+    margin-top: 5%;
+    white-space: nowrap;
+    /* overflow: scroll;
+    scroll-snap-type: y mandatory; */
+}
+
+.tr-action {
+    height: 36px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.tr {
+    margin: 0 31px 0 15px;
+}
+
+.filter-input {
+    position: absolute;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    padding: 7px 0px 7px 5px;
+    border: 1px solid white;
+    z-index: 10;
+    right: 5%;
+    top: -15%;
+}
+
+.filter-input:focus {
+    border: 1px solid #d44950;
+}
+
+.filter-input::placeholder {
+    color: #b8b0b0;
+}
+
+.no-user {
+    position: absolute;
+    left: 10%;
+    color: #fff;
+    font-size: 17px;
+}
+
+.table-view {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 89%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.title-view {
+    color: white;
+}
+
+.table-view::-webkit-scrollbar {
+    width: 10px;
+}
+
+.table-view::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.table-view::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(-45deg, #6a5af9, #d66efd);
+    border-radius: 50px;
+}
+
+
+.table-row-table {
+    color: #ffff;
+    width: 80%;
+    height: 61px;
+    margin-left: 15%;
+    padding: 0;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-table {
+    display: flex;
+    align-items: center;
+}
+
+.col-1 {
+    display: flex;
+    width: 30px;
+    justify-content: flex-end;
+}
+
+.col-2 {
+    width: 150px;
+    margin-left: -60px;
+}
+
+.table-header-user-table {
+    height: 6%;
+    padding: 14px 23px;
+}
+
+.btn-table {
+    display: flex;
+    margin-top: 16px;
+    height: 31px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.btn-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-edit:hover {
+    cursor: pointer;
+    background-color: #0062cc;
+}
+
+.btn-delete {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    border: none;
+    outline: none;
+    background-color: #dc3545;
+    border-radius: 5px;
+}
+
+.btn-delete:hover {
+    background-color: #d44950;
+}
+
+@media(min-width: 950px) and (max-width: 1280px) {
+    .user-table {
+        width: 48%;
+    }
+
+    .no-user {
+        left: 10%;
+        position: absolute;
+    }
+}
+
+@media(min-width: 950px) and (max-width: 1100px) {
+    .modal {
+        position: absolute;
+        top: 72% !important;
+    }
+}
+
+@media(min-width: 1112px) and (max-width: 1335px) {
+    .user-table {
+        width: 95%;
+    }
+}
+
+@media(min-width: 750px) and (max-width: 1110px) {
+    .user-table {
+        width: 100%;
+        height: 90%;
+    }
+
+    .table-row-table {
+        height: 61px;
+        margin-left: 4%;
+        width: 93%;
+    }
+
+    .col-2 {
+        margin-left: 50px;
+    }
+
+    .btn-table {
+        flex-wrap: nowrap;
+    }
+
+    .modal {
+        top: 72%;
+        width: 551px;
+    }
+
+    .modal .input {
+        width: 234px;
+    }
+
+    .modal .contai-input {
+        top: 19%;
+    }
+
+    .contai-button {
+        bottom: 13%;
+    }
+}
+
+@media(min-width: 450px) and (max-width: 745px) {
+    .container .home-add {
+        width: 95%;
+        height: 62%;
+        margin-left: 2%;
+    }
+
+    .user-table {
+        width: 98%;
+    }
+
+    .table-view {
+        margin-top: 20px;
+        height: 105%;
+    }
+
+    .table-row-table {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .flex-row .flex-large {
+        top: 7%;
+        height: 86%;
+    }
+
+    .flex-large .btn-add {
+        top: -3%;
+        gap: 0;
+    }
+
+    .filter-input {
+        top: -20%;
+    }
+
+    .col-1 {
+        display: flex;
+        width: 9px;
+    }
+
+    .col-2 {
+        width: 50px;
+        margin: 0;
+    }
+
+    .col:nth-child(3) {
+        margin-left: 70px;
+    }
+
+    .btn-table {
+        transform: translateX(45px);
+    }
+
+    .modal .input {
+        width: 263px;
+    }
+
+    .btn-table {
+        transform: translateX(0);
+    }
+
+    .modal {
+        margin-top: 20px;
+        width: 450px;
+        height: 202px;
+    }
+
+    .modal .input {
+        width: 190px;
+    }
+
+    .modal .contai-input {
+        top: 3%;
+    }
+
+    .contai-button {
+        bottom: 5%;
+    }
+}

@@ -1,0 +1,332 @@
+.nav-menu {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 40%;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.user-log {
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    right: 50px;
+    top: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.hi-name,
+.logout-item {
+    padding: 0 8px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hi-name b {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.logout-item {
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+
+.logout-item:hover {
+    background-color: #e4defc;
+}
+
+/* reset */
+button {
+    all: unset;
+}
+
+.item {
+    text-decoration: none;
+    color: var(--violet10);
+}
+
+.MenubarItem:hover>a {
+    color: white;
+}
+
+.MenubarRoot {
+    display: flex;
+    background-color: white;
+    background-color: #a64c6c;
+}
+
+.MenubarTrigger {
+    padding: 8px 12px;
+    outline: none;
+    user-select: none;
+    font-weight: 500;
+    border-radius: 4px;
+    color: black;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.wlc {
+    color: red;
+}
+
+
+.MenubarTrigger[data-highlighted],
+.MenubarTrigger[data-state='open'] {
+    background-color: var(--violet5);
+}
+
+
+.MenubarContent,
+.MenubarSubContent {
+    min-width: 220px;
+    margin-left: 13px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 5px;
+    box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2);
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+}
+
+.MenubarItem,
+.MenubarSubTrigger,
+.MenubarCheckboxItem,
+.MenubarRadioItem {
+    all: unset;
+    font-size: 13px;
+    line-height: 1;
+    color: var(--violet11);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    padding: 0 10px;
+    position: relative;
+    user-select: none;
+}
+
+.MenubarItem.inset:hover {
+    background-color: #EFF5F5;
+}
+
+.MenubarItem.inset,
+.MenubarSubTrigger.inset,
+.MenubarCheckboxItem.inset,
+.MenubarRadioItem.inset {
+    /* padding-left: 20px; */
+    padding: 5px 0 5px 20px;
+}
+
+.MenubarItem[data-state='open'],
+.MenubarSubTrigger[data-state='open'] {
+    background-color: var(--violet4);
+    color: var(--violet11);
+}
+
+.MenubarItem[data-highlighted],
+.MenubarSubTrigger[data-highlighted],
+.MenubarCheckboxItem[data-highlighted],
+.MenubarRadioItem[data-highlighted] {
+    background-image: linear-gradient(135deg, var(--violet9) 0%, var(--violet10) 100%);
+    color: var(--violet1);
+}
+
+.MenubarItem[data-disabled],
+.MenubarSubTrigger[data-disabled],
+.MenubarCheckboxItem[data-disabled],
+.MenubarRadioItem[data-disabled] {
+    color: var(--mauve8);
+    pointer-events: none;
+}
+
+.MenubarItemIndicator {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MenubarSeparator {
+    height: 1px;
+    background-color: var(--violet6);
+    margin: 5px;
+}
+
+.RightSlot {
+    margin-left: auto;
+    padding-left: 20px;
+    color: var(--mauve9);
+}
+
+[data-highlighted]>.RightSlot {
+    color: white;
+}
+
+[data-disabled]>.RightSlot {
+    color: var(--mauve8);
+}
+
+/* footer */
+.container-footer {
+    width: 100%;
+    height: 27vh;
+}
+
+.contact-footer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-contact {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    color: #504f4f;
+    margin-top: 10px;
+
+}
+
+.contact-child:first-child {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.contact-child {
+    padding: 3px;
+    font-size: 17px;
+}
+
+.contact-child:not(:first-child):hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+.icon-footer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.icon-footer i:hover {
+    border-bottom: 1px solid black;
+}
+
+.footer-make {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #5046c7;
+    color: #EFF5F5;
+    font-size: 20px;
+}
+
+
+@media(min-width: 800px) and (max-width: 1112px) {
+    .user-log {
+        z-index: 10;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        right: 0px;
+        top: 96px;
+        background-color: #ffffff;
+        padding-left: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0px 15px;
+        width: 275px;
+        justify-content: center;
+    }
+
+    .nav-menu {
+        width: 48%;
+    }
+
+    .container-footer {
+        height: 23vh;
+    }
+
+    .contact-footer {
+        font-size: 20px;
+        gap: 0;
+        margin-left: 5%;
+    }
+
+    .contact-child {
+        font-size: 16px;
+    }
+
+    .home-title span {
+        margin-top: 15px;
+    }
+
+    .home-child span {
+        margin-top: 30px;
+    }
+
+
+    .logout-item {
+        width: 75px;
+        margin-left: 40px;
+    }
+}
+
+@media(min-width: 1024px) and (max-width: 1336px) {
+    .container-home {
+        height: 70vh;
+    }
+
+    .container-footer {
+        height: 19vh;
+    }
+}
+
+@media(min-width: 500px) and (max-width: 800px) {
+    .nav-menu {
+        width: 54%;
+    }
+
+    .user-log {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 280px;
+    }
+}

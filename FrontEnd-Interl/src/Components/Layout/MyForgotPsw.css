@@ -1,0 +1,326 @@
+.container-forgot {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-color: #091548;
+    position: relative;
+}
+
+.content-top-forgot {
+    width: 100%;
+    height: 60%;
+}
+
+.content-icon-forgot {
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 587px;
+    height: 417px;
+    margin-top: 11%;
+}
+
+/* .content-icon-forgot input:invalid {
+    animation: invalid 0.3s 2;
+} */
+
+
+
+.content-icon-forgot .err-email {
+    position: absolute;
+    bottom: 29%;
+    color: red;
+    right: 23%;
+}
+
+
+.content-icon-forgot img {
+    position: absolute;
+    width: 213px;
+    margin-left: 24%;
+    transform: translateY(-64px);
+    animation: invalid 2s linear infinite;
+}
+
+@keyframes invalid {
+    25% {
+        translate: 0px -6px;
+    }
+
+    50% {
+        translate: 0px 6px;
+    }
+
+    75% {
+        translate: 0px -6px;
+    }
+
+}
+
+.content-icon-forgot .title-forgot {
+    position: absolute;
+    color: #fafafa;
+    font-size: 31px;
+    font-family: cursive;
+    margin-left: 24%;
+    margin-top: 20%;
+    /* transform: translateY(-64px); */
+}
+
+.content-icon-forgot span {
+    position: absolute;
+    color: #ffffff;
+    font-size: 17px;
+    display: flex;
+    margin-left: 11%;
+    margin-top: 30%;
+    line-height: 1;
+}
+
+.container-forgot input {
+    position: absolute;
+    width: 300px;
+    border-bottom: 1px solid #5A6BA8;
+    color: #fafafa;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 42%;
+}
+
+.container-forgot input:focus {
+    border-bottom: 1px solid #fafafa;
+}
+
+.content-icon-forgot button {
+    position: absolute;
+    color: #091548;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    font-size: 20px;
+    background-color: #fafafa;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    padding: 7px 26px;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.content-icon-forgot button:hover {
+    color: #fafafa;
+    background-color: #091548;
+    border: 1px solid #fafafa;
+}
+
+.content-icon-forgot p {
+    position: absolute;
+    color: #7f96ef;
+    font-size: 12px;
+    display: flex;
+    margin-left: 18%;
+    bottom: 0px;
+    line-height: 1;
+}
+
+.content-mid-forgot {
+    width: 100%;
+    height: 30%;
+    margin-top: 30px;
+}
+
+.your-logo img {
+    bottom: 27%;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+}
+
+.content-network {
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-top: 1px solid #5A6BA8;
+    width: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    bottom: 17%;
+}
+
+.content-network i {
+    padding: 5px;
+    font-size: 30px;
+    margin: 35px 20px 0 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.content-network i:hover {
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.content-note {
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 437px;
+    height: 130px;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-note p {
+    color: #4a60bb;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+
+
+
+@media(min-width: 1030px) and (max-width: 1280px) {
+    .container-forgot input {
+        position: relative;
+        margin-top: 60%;
+    }
+
+    .content-icon-forgot .err-email {
+        bottom: 25%;
+        right: 13%;
+    }
+
+    .content-icon-forgot {
+        width: 40%;
+        height: 42%;
+        margin-top: 15%;
+    }
+
+    .content-icon-forgot .title-forgot {
+        font-size: 25px;
+        top: 10%;
+    }
+
+    .content-icon-forgot span {
+        position: absolute;
+        margin-top: 43%;
+    }
+
+    .container-forgot button {
+        bottom: 8%;
+        font-size: 15px;
+        position: absolute;
+    }
+
+
+    .content-icon-forgot p {
+        margin-left: 10%;
+    }
+
+    .your-logo img {
+        margin-bottom: 50px;
+        width: 15%;
+    }
+
+    .content-network {
+        bottom: 22%;
+    }
+
+    .content-network i {
+        font-size: 24px;
+        margin: 30px 20px 0 20px;
+    }
+
+    .content-note {
+        bottom: 5%;
+    }
+}
+
+@media(min-width: 730px) and (max-width: 1025px) {
+    .content-icon-forgot {
+        width: 473px;
+        height: 403px;
+        margin-top: 22%;
+    }
+
+    .content-icon-forgot span {
+        font-size: 15px;
+        margin-left: 7%;
+        margin-top: 34%;
+    }
+
+    .container-forgot input {
+        margin-top: 52%;
+    }
+
+    .content-icon-forgot button {
+        bottom: 49px;
+        font-size: 18px;
+    }
+
+    .content-icon-forgot .err-email {
+        bottom: 26%;
+        right: 23%;
+    }
+}
+
+@media(min-width: 450px) and (max-width: 725px) {
+    .content-icon-forgot {
+        width: 447px;
+        height: 375px;
+        margin-top: 29%;
+    }
+
+    .content-icon-forgot img {
+        width: 176px;
+        margin-left: 26%;
+        transform: translateY(-44px);
+    }
+
+    .content-icon-forgot .title-forgot {
+        font-size: 22px;
+        margin-left: 25%;
+        margin-top: 21%;
+    }
+
+    .content-icon-forgot span {
+        font-size: 13px;
+    }
+
+    .content-icon-forgot .err-email {
+        bottom: 38%;
+        right: 16%;
+        font-size: 17px;
+    }
+
+    .content-icon-forgot button {
+        bottom: 104px;
+        font-size: 15px;
+        border-radius: 24px;
+        padding: 7px 10px;
+    }
+
+    .content-icon-forgot p {
+        margin-left: 10%;
+        bottom: 17px;
+    }
+
+    .your-logo img {
+        bottom: 36%;
+    }
+
+    .content-network {
+        bottom: 24%;
+    }
+
+    .content-note {
+        bottom: 37px;
+    }
+}
